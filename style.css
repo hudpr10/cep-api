@@ -68,6 +68,10 @@ body {
     color: var(--cor-vermelho);
 }
 
+table {
+    border-spacing: 0;
+}
+
 .tabela-texto {
     width: 150px;
     color: var(--cor-branco);
@@ -82,4 +86,8 @@ body {
     width: 100px;
     text-align: left;
     color: var(--cor-destaque);
+}
+
+tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.2);
 }
