@@ -27,17 +27,17 @@ async function buscar(cep) {
             estado.innerHTML = `${switchEstado(data.uf)}, ${data.uf}`;
             if(data.logradouro === "") {
                 logradouro.innerHTML = "Não encontrado"
-                logradouro.style.color = "#EE4266"
+                logradouro.classList.add('erro')
             } else {
                 logradouro.innerHTML = data.logradouro;
-                logradouro.style.color = "#f4f4f4"
+                logradouro.classList.remove('erro')
             }
             if(data.bairro === "") {
                 bairro.innerHTML = "Não encontrado"
-                bairro.style.color = "#EE4266"
+                bairro.classList.add('erro')
             } else {
                 bairro.innerHTML = data.bairro;
-                bairro.style.color = "#f4f4f4"
+                bairro.classList.remove('erro')
             }
             ddd.innerHTML = data.ddd;
             legenda.innerHTML = "";
