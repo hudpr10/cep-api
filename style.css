@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@400;700&display=swap');
+
+:root {
+    --cor-fundo: #232d3f;
+    --cor-branco: #f4f4f4;
+    --cor-destaque: #D0BFFF;
+    --cor-vermelho: #EE4266;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playpen Sans', cursive;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-fundo);
+    color: var(--cor-branco);
+}
+
+.bloco {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.campo__container {
+    border-radius: 8px;
+    border: 2px solid var(--cor-branco);
+    transition: 200ms;
+    display: flex;
+    padding: 8px 16px;
+    gap: 8px;
+} 
+
+.campo-cep {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--cor-branco);
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.campo__container:hover {
+    border: 2px solid var(--cor-destaque);
+    color: var(--cor-destaque);
+}
+
+.borda-colorida {
+    border: 2px solid var(--cor-destaque);
+}
+
+.lupa {
+    cursor: pointer;
+}
+
+.legenda {
+    color: var(--cor-vermelho);
+}
+
+.tabela-texto {
+    width: 150px;
+    color: var(--cor-branco);
+    padding: 8px 8px;
+}
+
+.tabela-titulo {
+    width: 100px;
+    text-align: left;
+    color: var(--cor-destaque);
+}

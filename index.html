@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEPs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bloco">
+        <h1 class="titulo">Digite seu CEP</h1>
+        <div class="campo__container">
+            <input type="text" class="campo-cep" placeholder="00000-000" maxlength="9" minlength="9">
+            <img class="lupa" src="imgs/search.svg" alt="Lupa de pesquisa">
+        </div>
+        <p class="legenda"></p>
+        <table gap="0">
+            <tr class="linha">
+                <th class="tabela-titulo tabela-texto">Cidade:</th>
+                <td class="tabela-texto" id="cidade"></td>
+            </tr>
+            <tr>
+                <th class="tabela-titulo tabela-texto">Estado:</th>
+                <td class="tabela-texto" id="estado"></td>
+            </tr>
+            <tr>
+                <th class="tabela-titulo tabela-texto">Logradouro:</th>
+                <td class="tabela-texto" id="logradouro"></td>
+            </tr>
+            <tr>
+                <th class="tabela-titulo tabela-texto">Bairro:</th>
+                <td class="tabela-texto" id="bairro"></td>
+            </tr>
+            <tr>
+                <th class="tabela-titulo tabela-texto">DDD:</th>
+                <td class="tabela-texto" id="ddd"></td>
+            </tr>
+        </table>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+    <script src="js/style.js"></script>
+</body>
+</html>
